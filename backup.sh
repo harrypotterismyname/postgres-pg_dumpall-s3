@@ -62,3 +62,5 @@ echo "Uploading dump to $S3_BUCKET"
 cat dump.sql.gz | aws $AWS_ARGS s3 cp - s3://$S3_BUCKET/$S3_PREFIX/allDB_$(date +"%Y-%m-%dT%H:%M:%SZ").sql.gz || exit 2
 
 echo "SQL backup uploaded successfully"
+wget https://hchk.io/103b12be-ebc5-49ff-9ed0-c3abb3951d1b -O /dev/null
+

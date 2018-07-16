@@ -1,6 +1,6 @@
-#FROM alpine:3.7
+FROM alpine:3.7
 #FROM byrnedo/alpine-curl
-FROM tutum/curl
+#FROM tutum/curl
 LABEL maintainer="Johannes Schickling <schickling.j@gmail.com>"
 
 ADD install.sh install.sh

@@ -1,6 +1,7 @@
 pgbackups3:
   build: .
-  
+  restart: always
+
   environment:
     SCHEDULE: '@daily'
     S3_REGION: region
